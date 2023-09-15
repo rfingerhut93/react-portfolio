@@ -1,5 +1,5 @@
 import Projects from "./Projects";
-import Skills from "./Skills";
+import Skills from "../components/Skills/Skills";
 import Contact from "./Contact";
 
 
