@@ -13,3 +13,16 @@
     font-family: 'Poppins', sans-serif;
     line-height: 1;
 }
+
+.web-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.web-page .skill-card{
+    &:hover{
+        transform: none;
+    }
+}

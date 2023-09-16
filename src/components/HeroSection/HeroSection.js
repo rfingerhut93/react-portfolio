@@ -1,4 +1,3 @@
-import About from "../About";
 import './herosection.css'
 import bg from '../../assets/bg.png';
 import hireMe from '../../assets/hireMe.svg'
