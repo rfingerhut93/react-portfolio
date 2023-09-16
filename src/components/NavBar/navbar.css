@@ -11,7 +11,7 @@
     top: 0;
     z-index: 3;
     font-size: 1.5rem;
-    background-color: white;
+    background-color: var(--bg-color);
 }
 
 .logo{
@@ -23,12 +23,12 @@
 .desktop-menu-list-item{
     margin: 1rem;
     cursor: pointer;
-    color: black;
+    color: white;
 
     &:hover{
-        color: darkblue;
+        color: rgb(248, 141, 216);
         padding-bottom: 0.5rem;
-        border-bottom: 3px solid darkblue;
+        border-bottom: 3px solid rgb(248, 141, 216);
     }
 }
 

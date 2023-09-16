@@ -1,5 +1,5 @@
 import './navbar.css'
-import logo from '../../assets/logo.jpg'
+import logo from '../../assets/logo.png'
 import mail from '../../assets/mail.svg'
 import {Link} from 'react-scroll';
 

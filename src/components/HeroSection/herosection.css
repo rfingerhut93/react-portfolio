@@ -1,6 +1,7 @@
 #hero-section {
     height: calc(100vh - 5rem);
-    width: 100%;
+    width: 100vw;
+    max-width: 80vw;
     margin: 0 auto;
     position: relative;
 }
@@ -31,7 +32,7 @@
 }
 
 #intro-name{
-    color: yellow;
+    color: rgb(248, 141, 216);
 }
 
 #intro-para{
