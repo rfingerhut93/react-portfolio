@@ -10,8 +10,10 @@ const Skills = () => {
 
     return (
         <section id="skills-section">
-            <span className="skill-title">Skills</span>
-            <span className="skill-description">I specialize in creating web experiences by using various technologies:</span>
+            <div id="section-text-container">
+                <span className="skill-title">Skills</span>
+                <span className="skill-description">I specialize in creating web experiences by using various technologies.</span>
+            </div>
             <div className="skill-card-container">
                 <div className="skill-card">
                     <img src={websiteIcon} alt="website icon" className="skill-card-img"/>
