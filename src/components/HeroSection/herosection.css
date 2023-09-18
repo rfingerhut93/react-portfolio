@@ -8,7 +8,7 @@
 
 .bg{
     position: absolute;
-    top: 15rem;
+    top: 12rem;
     right: 0;
     z-index: -1;
     object-fit: cover;
@@ -16,7 +16,7 @@
 }
 
 .hero-section-content{
-    height: 100vh;
+    height: calc(100vh - 5rem);
     width: 100%;
     padding: 2rem 8rem;
     font-size: 5rem;
@@ -32,7 +32,7 @@
 }
 
 #intro-name{
-    color: rgb(248, 141, 216);
+    color: var(--highlight-color);
 }
 
 #intro-para{
