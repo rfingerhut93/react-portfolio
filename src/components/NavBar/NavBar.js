@@ -8,12 +8,13 @@ const NavBar = () => {
         <nav className="navbar">
             <img src={logo} alt="logo" className="logo" />
             <div className="desktop-menu">
-                <Link to="/" className="desktop-menu-list-item">Home</Link>
-                <Link className="desktop-menu-list-item">About</Link>
-                <Link className="desktop-menu-list-item">Portfolio</Link>
-                {/* <Link className="desktop-menu-list-item">Clients</Link> */}
+                <Link activeClass='active' to="hero-section" spy={true} smooth={true} offset={-100} duration={500}className="desktop-menu-list-item">Home</Link>
+                <Link activeClass='active' to="skills-section" className="desktop-menu-list-item" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link>
+                <Link activeClass='active' to="portfolio-section" className="desktop-menu-list-item" spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link>
             </div>
-            <button className="desktop-menu-btn">
+            <button className="desktop-menu-btn" onClick={() => {
+                document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'});
+            }}>
                 <img src={mail} alt="email icon" className="desktop-menu-email-icon"/>Contact Me
             </button>
         </nav>

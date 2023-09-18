@@ -26,9 +26,9 @@
     color: white;
 
     &:hover{
-        color: rgb(248, 141, 216);
+        color: var(--highlight-color);
         padding-bottom: 0.5rem;
-        border-bottom: 3px solid rgb(248, 141, 216);
+        border-bottom: 3px solid var(--highlight-color);
     }
 }
 
@@ -50,6 +50,10 @@
     height: 1.2rem;
     width: auto;
     margin: 1rem;
+}
+
+.active{
+    color: var(--highlight-color);
 }
 
 @media screen and (max-width: 840px) {
