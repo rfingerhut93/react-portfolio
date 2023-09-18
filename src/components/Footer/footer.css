@@ -1,0 +1,10 @@
+.footer{
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 0.9rem;
+    background: rgba(24, 21, 43, 0.363);
+}
