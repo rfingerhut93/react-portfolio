@@ -1,23 +1,22 @@
 #contact-section{
     min-height: calc(100vh - 5rem);
     width: 100vw;
-    max-width: 80vw;
     margin: 0 auto;
     padding: 0 1rem;
     text-align: center;
 }
 
 #contact-title{
-    font-size: 4rem;
-    margin: 1rem 0;
+    padding-top: 5rem;
+    font-size: 6rem;
     font-weight: 600;
     color: var(--section-title-color);
+    margin-bottom: 2vh;
 }
 
 #contact-description {
     font-size: 1.2rem;
     font-weight: 200;
-    max-width: 45rem;
 }
 
 #name, #email, #message {
