@@ -1,13 +1,13 @@
-import Projects from "./Projects";
 import Skills from "../components/Skills/Skills";
-import Contact from "./Contact";
+import Contact from "./Contact/Contact";
+import Portfolio from "./Portfolio/Portfolio";
 
 
 const MainSection = () => {
     return (
         <div className="main-container">
-            <Projects />
             <Skills />
+            <Portfolio />
             <Contact />
         </div>
     );

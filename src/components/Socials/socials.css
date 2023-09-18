@@ -1,0 +1,17 @@
+.socials-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.social-icon-link {
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--highlight-color);
+    font-size: 2.7rem;
+    margin: 0 15px;
+}
