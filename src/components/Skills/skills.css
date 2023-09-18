@@ -24,6 +24,18 @@
     max-width: 65vw;
 }
 
+.skill-title{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: var(--section-title-color);
+}
+
+.skill-description{
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
 .skill-card{
     display:flex;
     align-items: center;
@@ -55,16 +67,7 @@
     font-weight: 300;
 }
 
-.skill-title{
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
-}
 
-.skill-description{
-    font-size: 1.2rem;
-    font-weight: 200;
-}
 
 @media screen and (max-width: 720px){
     .skill-card-text>p{
