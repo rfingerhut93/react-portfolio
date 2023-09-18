@@ -3,6 +3,7 @@
     --text-color: white;
     --highlight-color: rgb(173, 141, 248);
     --secion-title-color: white;
+    --font-family: 'Poppins', sans-serif
 }
 
 .App {
@@ -11,7 +12,7 @@
     width: 100vw;
     text-decoration: none;
     background: transparent;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
     line-height: 1;
 }
 
