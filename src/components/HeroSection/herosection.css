@@ -1,6 +1,6 @@
 #hero-section {
     height: calc(100vh - 5rem);
-    width: 100vw;
+    width: 100%;
     max-width: 80vw;
     margin: 0 auto;
     position: relative;
@@ -23,6 +23,7 @@
     font-weight: 700;
     display: flex;
     flex-direction: column;
+    align-content: center;
     justify-content: center;
 }
 
@@ -31,11 +32,27 @@
     font-weight: 100;
 }
 
+#intro-text{
+    font-size: 6rem;
+}
+
 #intro-name{
     color: var(--highlight-color);
+    text-shadow:1px 2px 0px var(--secondary-highlight-color);
+}
+
+.text-gradient{
+    text-shadow: 1px 2px 0px var(--highlight-color);
+    -webkit-background-clip: text;
+    color: var(--secondary-highlight-color); 
+}
+
+.smaller{
+    font-size: 4.5rem;
 }
 
 #intro-para{
+    margin-top: 0.5rem;
     font-size: 1.2rem;
     font-weight: 300;
 }
@@ -46,7 +63,15 @@
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    height: 4rem;
+    width: 10rem;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover{
+        background-color: var(--highlight-color);
+        transform: scale(1.05);
+    }
 }
 
 .btn img{
@@ -57,16 +82,65 @@
     vertical-align: middle;
 }
 
-@media screen and (max-width:840px) {
+@media screen and (max-width:1325px) {
+    #hero-section{
+        padding-top: 4vh;
+        margin: 0;
+        width: 100%;
+    }
+    .bg {
+        display: none;
+    }
+    .smaller{
+        font-size: 4rem;
+    }
+
+}
+
+
+/* mobile (portrait) ----------- */
+@media only screen and (max-width: 481px) {
+    #hero-section{
+        padding-top: 4vh;
+        margin: 0 auto;
+        width: 100%;
+        align-self: center;
+    }
+
     .hero-section-content{
-        font-size: 10vw;
+        text-align: center;
+        margin: 0;
+        padding:
+        
     }
 
     #hello-text{
-        font-size: 4.5vw;
+        font-size: 1.2rem;
+        font-weight: 100;
     }
-}
-
-@media screen and (max-width: 480px) {
     
+    #intro-text{
+        font-size: 6rem;
+    }
+    
+    #intro-name{
+        color: var(--highlight-color);
+        text-shadow:1px 2px 0px var(--secondary-highlight-color);
+    }
+   
+    .smaller{
+        font-size: 3rem;
+    }
+    
+    #intro-para{
+        margin-top: 0.5rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+        width: 100%;
+    }
+
+    .btn{
+        width: 21rem;
+        align-self: center;
+    }
 }

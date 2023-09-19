@@ -1,11 +1,12 @@
+
 .navbar{
     height: 5rem;
-    width: 100vw;
-    overflow: hidden;
+    width: 100%;
     margin: 0;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
+    flex-wrap: nowrap;
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -34,31 +35,43 @@
 
 .desktop-menu-btn{
     border: none;
-    background-color: gray;
+    background-color: white;
     cursor: pointer;
     color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 1rem;
+    padding: 0.5rem 1rem;
+
     border-radius: 2rem;
     font-size: 1.2rem;
+    transition: background-color 0.3s, transform 0.2s;
+
+    &:hover{
+        background-color: var(--secondary-highlight-color);
+        transform: scale(1.05);
+    }
 }
 
 .desktop-menu-email-icon{
     object-fit: cover;
     height: 1.2rem;
     width: auto;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 0;
 }
 
 .active{
     color: var(--highlight-color);
 }
 
-@media screen and (max-width: 840px) {
-    .navbar{
-        width: 100%;
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+    #btn-text{
+        display: none;
     }
-    
+
+    .desktop-menu-email-icon{
+        margin: 1rem;
+    }
+
 }

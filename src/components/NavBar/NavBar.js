@@ -15,7 +15,7 @@ const NavBar = () => {
             <button className="desktop-menu-btn" onClick={() => {
                 document.getElementById('contact-form').scrollIntoView({behavior: 'smooth'});
             }}>
-                <img src={mail} alt="email icon" className="desktop-menu-email-icon"/>Contact Me
+                <img src={mail} alt="email icon" className="desktop-menu-email-icon"/><p id="btn-text">Contact Me</p>
             </button>
         </nav>
     );
