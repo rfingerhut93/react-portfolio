@@ -1,9 +1,13 @@
 import './navbar.css'
 import logo from '../../assets/logo.png'
 import mail from '../../assets/mail.svg'
+import menu from '../../assets/menu.png'
 import {Link} from 'react-scroll';
+import { useState } from 'react';
 
 const NavBar = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
         <nav className="navbar">
             <img src={logo} alt="logo" className="logo" />
@@ -17,6 +21,15 @@ const NavBar = () => {
             }}>
                 <img src={mail} alt="email icon" className="desktop-menu-email-icon"/><p id="btn-text">Contact Me</p>
             </button>
+
+            {/* Burger Menu */}
+            <img src={menu} alt="Menu" className="mobMenu" onClick={() => {setShowMenu(!showMenu)}}/>
+            <div className="burger-menu" style={{display: showMenu? 'flex':'none'}}>
+                <Link activeClass='active' to="hero-section" spy={true} smooth={true} offset={-100} duration={500}className="desktop-menu-list-item" onClick={() => {setShowMenu(false)}}>Home</Link>
+                <Link activeClass='active' to="skills-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => {setShowMenu(false)}}>Skills</Link>
+                <Link activeClass='active' to="portfolio-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => {setShowMenu(false)}}>Portfolio</Link>
+                <Link activeClass='active' to="contact-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => {setShowMenu(false)}}>Contact</Link>
+            </div>
         </nav>
     );
 }
