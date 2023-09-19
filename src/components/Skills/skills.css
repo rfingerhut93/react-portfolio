@@ -71,3 +71,71 @@
         line-height: 0.9;
     }
 }
+
+@media screen and (max-width:720px){
+    .skill-card-img{
+        flex-shrink: 0;
+        padding-right: 2px;
+        height: 20vh;
+        width: auto;
+        align-items: center;
+    }
+    .skill-card-text h2 {
+        font-size: 1.5rem;
+    }
+    .skill-card-text p{
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+    #full-stack-icon{
+        width: 25vw;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .skill-card{
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .skill-card-text h2{
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.8rem;
+    }
+    #skills-section{
+        width: 100%;
+    }
+    .skill-card-container{
+       width: 70vw;
+    }
+
+}
+
+@media screen and (max-width : 481px) {
+    #skills-section{
+       width: 100%;
+       margin: 0 auto;
+       padding: 7.5vh 0;
+    }
+
+    #section-text-container{
+        max-width: 80vw;
+
+    }
+    
+    .skill-card-container{
+       width: 100vw;
+       max-width: 100vw;
+       margin-top: 0;
+    }
+
+    .skill-card{
+        width: 80vw;
+        margin: 1rem auto;
+    }
+
+    .skill-title{
+        font-size: 5rem;
+    }
+}

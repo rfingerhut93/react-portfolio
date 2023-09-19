@@ -97,21 +97,33 @@
 
 }
 
+@media screen and (max-width:720px){
+    #hero-section {
+        margin: 0 auto;
+    }
+    
+    .hero-section-content{
+        padding: 2rem 1rem;
+    }
+
+    .btn {
+        transition: none;
+        &:hover{
+            transform: none;
+        }
+    }
+}
+
 
 /* mobile (portrait) ----------- */
 @media only screen and (max-width: 481px) {
     #hero-section{
-        padding-top: 4vh;
-        margin: 0 auto;
-        width: 100%;
-        align-self: center;
+        margin: 0;
     }
 
     .hero-section-content{
         text-align: center;
-        margin: 0;
-        padding:
-        
+        padding: 0;
     }
 
     #hello-text{
@@ -123,22 +135,10 @@
         font-size: 6rem;
     }
     
-    #intro-name{
-        color: var(--highlight-color);
-        text-shadow:1px 2px 0px var(--secondary-highlight-color);
-    }
-   
     .smaller{
         font-size: 3rem;
     }
-    
-    #intro-para{
-        margin-top: 0.5rem;
-        font-size: 1.3rem;
-        font-weight: 300;
-        width: 100%;
-    }
-
+   
     .btn{
         width: 21rem;
         align-self: center;
