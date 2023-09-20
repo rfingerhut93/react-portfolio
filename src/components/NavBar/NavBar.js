@@ -23,14 +23,20 @@ const NavBar = () => {
             </button>
 
             {/* Burger Menu */}
-            <img src={menu} alt="Menu" className="mobMenu" onClick={() => {setShowMenu(!showMenu)}}/>
-            <div className="burger-menu" style={{display: showMenu? 'flex':'none'}}>
-                <Link activeClass='active' to="hero-section" spy={true} smooth={true} offset={-100} duration={500}className="desktop-menu-list-item" onClick={() => {setShowMenu(false)}}>Home</Link>
-                <Link activeClass='active' to="skills-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => {setShowMenu(false)}}>Skills</Link>
-                <Link activeClass='active' to="portfolio-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => {setShowMenu(false)}}>Portfolio</Link>
-                <Link activeClass='active' to="contact-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => {setShowMenu(false)}}>Contact</Link>
+            <div className="mobMenu" onClick={() => { setShowMenu(!showMenu) }}>
+                <div className={`menu-bar ${showMenu ? 'open' : ''}`}></div>
+                <div className={`menu-bar ${showMenu ? 'open' : ''}`}></div>
+                <div className={`menu-bar ${showMenu ? 'open' : ''}`}></div>
+            </div>
+            <div className="burger-menu" style={{ display: showMenu ? 'flex' : 'none' }}>
+                <Link activeClass='active' to="hero-section" spy={true} smooth={true} offset={-100} duration={500} className="burger-menu-list-item" onClick={() => { setShowMenu(false) }}>Home</Link>
+                <Link activeClass='active' to="skills-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => { setShowMenu(false) }}>Skills</Link>
+                <Link activeClass='active' to="portfolio-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => { setShowMenu(false) }}>Portfolio</Link>
+                <Link activeClass='active' to="contact-section" className="burger-menu-list-item" spy={true} smooth={true} offset={-100} duration={500} onClick={() => { setShowMenu(false) }}>Contact</Link>
             </div>
         </nav>
+
+        
     );
 }
 

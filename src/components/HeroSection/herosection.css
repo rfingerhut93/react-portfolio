@@ -43,7 +43,6 @@
 
 .text-gradient{
     text-shadow: 1px 2px 0px var(--highlight-color);
-    -webkit-background-clip: text;
     color: var(--secondary-highlight-color); 
 }
 
@@ -100,6 +99,7 @@
 @media screen and (max-width:720px){
     #hero-section {
         margin: 0 auto;
+        text-align: center;
     }
     
     .hero-section-content{
@@ -116,31 +116,9 @@
 
 
 /* mobile (portrait) ----------- */
-@media only screen and (max-width: 481px) {
-    #hero-section{
-        margin: 0;
-    }
-
-    .hero-section-content{
-        text-align: center;
-        padding: 0;
-    }
-
-    #hello-text{
-        font-size: 1.2rem;
-        font-weight: 100;
-    }
-    
-    #intro-text{
-        font-size: 6rem;
-    }
-    
-    .smaller{
-        font-size: 3rem;
-    }
-   
-    .btn{
-        width: 21rem;
-        align-self: center;
-    }
+@media screen and (max-width: 480px) {
+   .hero-section-content{
+    padding-top: 0;
+    padding-bottom: 5rem;
+   }
 }

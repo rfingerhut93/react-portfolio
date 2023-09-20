@@ -3,8 +3,10 @@ import Socials from '../Socials/Socials';
 const Contact = () => {
     return (
         <section id="contact-section">
+            <div id="contact-text-container">
                 <h2 id="contact-title">Contact</h2>
                 <span id="contact-description">Fill out the form below and get in touch today!</span>
+            </div>
             <form id="contact-form">
                 <input type="text" id="name" placeholder="Your Name"/>
                 <input type="email" id="email" placeholder="Your Email"/>

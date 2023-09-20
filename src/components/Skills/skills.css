@@ -1,20 +1,18 @@
 #skills-section{
-    overflow: hidden;
-    width: 100vw;
+    width: 100%;
     margin: 0 auto;
-    padding: 2rem 8rem;
+    padding: 2rem 8rem 13rem 8rem;
     line-height: 1.4rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    margin-bottom: 5vh;
 }
 
 #section-text-container{
     display: flex;
     flex-direction: column;
+    width: 65%;
 }
 
 #skill-card-img{
@@ -25,7 +23,9 @@
 
 .skill-card-container{
     max-width: 65vw;
-    margin: 5vh auto 0 auto;
+    margin: 1rem auto 0 auto;
+    text-align: center;
+    max-width: 65%;
 }
 
 .skill-title{
@@ -44,7 +44,7 @@
     display:flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 5vh;
+    margin-bottom: 1.5rem;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 2rem;
     padding: 1rem 2rem;
@@ -58,6 +58,7 @@
 .skill-card-text h2 {
     margin-bottom: 3vh;
     font-size: 2.7rem;
+    line-height:.9;
 }
 
 .skill-card-text p {
@@ -68,74 +69,52 @@
 @media screen and (max-width:1325px) {
     .skill-card-text h2{
         font-size: 2.1rem;
-        line-height: 0.9;
     }
 }
 
 @media screen and (max-width:720px){
     .skill-card-img{
-        flex-shrink: 0;
-        padding-right: 2px;
-        height: 20vh;
-        width: auto;
-        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: 100%;
+    }
+    #full-stack-icon{
+        width: 100%;
+        height: auto;
+
     }
     .skill-card-text h2 {
-        font-size: 1.5rem;
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        font-size: 1.8rem;
     }
     .skill-card-text p{
         font-size: 0.9rem;
         line-height: 1.2;
     }
-    #full-stack-icon{
-        width: 25vw;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 580px){
+    
     .skill-card{
         flex-direction: column;
         padding: 2rem;
     }
-    .skill-card-text h2{
-        margin-top: 1rem;
-        margin-bottom: 0.8rem;
-        font-size: 1.8rem;
-    }
-    #skills-section{
-        width: 100%;
-    }
-    .skill-card-container{
-       width: 70vw;
-    }
-
-}
-
-@media screen and (max-width : 481px) {
-    #skills-section{
-       width: 100%;
-       margin: 0 auto;
-       padding: 7.5vh 0;
-    }
-
-    #section-text-container{
-        max-width: 80vw;
-
+    .skill-title{
+        padding-bottom: 0.25rem;
     }
     
-    .skill-card-container{
-       width: 100vw;
-       max-width: 100vw;
-       margin-top: 0;
+    #skills-section{
+        padding: 5rem 3rem;
+        width: 100%;
+        text-align: center;
     }
+}
 
+
+@media screen and (max-width : 581px) {
     .skill-card{
-        width: 80vw;
-        margin: 1rem auto;
+        width: 100%;
     }
-
-    .skill-title{
-        font-size: 5rem;
+    #skills-section{
+        padding: 0;
     }
 }

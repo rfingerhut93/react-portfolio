@@ -1,5 +1,6 @@
 :root {
     --bg-color: rgb(5, 0, 39);
+    --secondary-bg-color: rgb(69, 64, 97);
     --text-color: white;
     --highlight-color: rgb(196, 108, 223);
     --secion-title-color: white;
@@ -15,6 +16,7 @@
     background: transparent;
     font-family: var(--font-family);
     line-height: 1;
+    box-sizing: border-box;
 }
 
 
@@ -25,9 +27,8 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
 }
 
-@media only screen and (max-width: 481px) {
-
+@media only screen and (max-width: 480px) {
+    
 }

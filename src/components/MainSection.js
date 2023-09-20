@@ -1,6 +1,7 @@
 import Skills from "../components/Skills/Skills";
 import Contact from "./Contact/Contact";
 import Portfolio from "./Portfolio/Portfolio";
+import "./mainSection.css";
 
 
 const MainSection = () => {

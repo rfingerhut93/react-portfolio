@@ -1,21 +1,17 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-
-import HomePage from "./pages/HomePage";
-
+import HeroSection from './components/HeroSection/HeroSection';
+import MainSection from './components/MainSection';
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <NavBar />
-        <div id="page-body">
-          <Routes>
-              <Route path="/" element={<HomePage />}/>    
-          </Routes>
-        </div>
+        <HeroSection/>
+        <MainSection />
         <Footer />
       </div>
     </BrowserRouter>

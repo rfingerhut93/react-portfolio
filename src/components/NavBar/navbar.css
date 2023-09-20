@@ -60,46 +60,90 @@
     margin: 1rem 1rem 1rem 0;
 }
 
+.burger-menu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: var(--bg-color);
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.mobMenu {
+    cursor: pointer;
+    display: none;
+}
+  
+.menu-bar {
+    width: 30px;
+    height: 4px;
+    background-color: var(--text-color);
+    margin: 6px 0;
+    transition: 0.4s;
+    border-radius: 2rem;
+  }
+  
+.open {
+    transform: rotate(-45deg);
+    transition: 0.2s; 
+}
+
+.open:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: 0% 0%;
+}
+  
+.open:nth-child(2) {
+    opacity: 0;
+}
+  
+.open:last-child {
+    transform: rotate(-45deg);
+    transform-origin: 00% 100%;
+}
+
+.burger-menu-list-item{
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+    margin: 0.25rem;
+    border-radius: 0.5rem;
+    transition: background 0.1s;
+
+    &:hover{
+        color: var(--highlight-color);
+        background: var(--secondary-bg-color);
+    }
+}
+
 .active{
     color: var(--highlight-color);
 }
+  
 
-@media screen and (max-width: 580px) and (min-width: 482px) {
-    .navbar {
-        padding: 0 2rem;
-        margin: 0;
-    }
-    #btn-text{
-        display: none;
-    }
-    .desktop-menu-email-icon{
-       margin: 0 auto;
-    }
+/* Tablets (portrait) ----------- */
+@media screen and (max-width: 720px){
     .desktop-menu-btn{
-        padding: 0.5rem 1rem;
+        display: none;
     }
     .desktop-menu-list-item{
-        flex-basis: 10%;
-        flex-shrink: 2;
-    }
-    
-}
-
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width : 481px) {
-    #btn-text{
         display: none;
     }
 
-    .desktop-menu-email-icon{
-        margin: 0 auto;
+    .mobMenu{
+        display:inline-block;
     }
+}
 
-   .desktop-menu-btn{
-    padding: 0.5rem;
-   }
-
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) {
+   
     .logo{
         height: 3rem;
         width: auto;
