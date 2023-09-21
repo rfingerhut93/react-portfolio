@@ -2,10 +2,10 @@
     --bg-color: rgb(5, 0, 39);
     --secondary-bg-color: rgb(69, 64, 97);
     --text-color: white;
-    --highlight-color: rgb(196, 108, 223);
+    --highlight-color: #c46cdf;
     --secion-title-color: white;
     --font-family: 'Poppins', sans-serif;
-    --secondary-highlight-color: rgb(196, 250, 89);
+    --secondary-highlight-color: #c4fa59;
 }
 
 .App {
@@ -27,8 +27,4 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-
-@media only screen and (max-width: 480px) {
-    
 }
