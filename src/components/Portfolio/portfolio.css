@@ -26,7 +26,6 @@
     font-weight: 200;
     max-width: 100%;
     line-height: 1.2;
-    padding-right: 2rem;
 }
 
 .portfolio-info{
@@ -49,26 +48,35 @@
 }
 
 #portfolio-imgs{
-    margin: 1rem auto 0 auto;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 65%;
+    padding-top: 1rem;
 }
 
 .portfolio-img{
-    object-fit: cover;
-    height: 20rem;
-    width: 20rem;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 15rem;
+    width: 15rem;
     margin: 0.5rem;
-    border-radius: 2rem;
-    border: 10px solid var(--secondary-bg-color);
     transition: transform 0.2s;
+    flex-basis: calc(33.33% - 1rem); /* Set each image container to 33.33% width with 1rem spacing between them */
+
 
     &:hover{
        transform: scale(1.05); 
     }
+}
+
+.portfolio-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:fit-content;
 }
 
 
@@ -96,20 +104,19 @@
         }
 
     }
-    #portfolio-imgs{
-        width: 70%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 10px;
     
-    }
     #portfolio-section{
         width: 100%;
-        padding: 0;
+        padding-bottom: 15rem;
     }
+
     #portfolio-section-text{
-        width: 80%;   
+        width: 80%;
+    }
+
+    #portfolio-imgs{
+        margin: 0;
+        width: 80%;
     }
 }
 
@@ -117,9 +124,19 @@
 @media screen and (max-width: 720px) {
     .portfolio-img {
         margin: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #lovins-img{
+        margin-top: -1rem;
     }
     #portfolio-imgs{
-        gap: 15px;
+        gap: 2rem;
+    }
+
+    .portfolio-item{
+        width: 100%;
     }
 
     #portfolio-description{
@@ -130,6 +147,7 @@
         padding: 5rem 2rem;
         text-align: center;
         margin: 0;
+        width: 100%;
     }
 
     .portfolio-info{
@@ -138,9 +156,9 @@
     
 }
 
-@media screen and (max-width: 481px) {
+@media screen and (max-width: 480px) {
     #portfolio-title{
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     #portfolio-description{
@@ -151,9 +169,8 @@
         width: 50vw;
     }
 
-    .portfolio-img{
-        width: 10rem;
-        height: 10rem;
+    #portfolio-section-text{
+        width: 100%;
     }
 }
 

@@ -1,14 +1,9 @@
 import './skills.css';
 import websiteIcon from '../../assets/websiteIcon.png';
-import fullStackIcon from '../../assets/fullStackIcon.png';
 import componentIcon from '../../assets/componentIcon.png';
-import { useNavigate } from 'react-router-dom';
 import fullStack from '../../assets/fullStack.png';
 
 const Skills = () => {
-
-    const navigate = useNavigate();
-
     return (
         <section id="skills-section">
             <div id="section-text-container">

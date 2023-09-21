@@ -1,7 +1,6 @@
 import './navbar.css'
 import logo from '../../assets/logo.png'
 import mail from '../../assets/mail.svg'
-import menu from '../../assets/menu.png'
 import {Link} from 'react-scroll';
 import { useState } from 'react';
 
@@ -10,9 +9,11 @@ const NavBar = () => {
 
     return (
         <nav className="navbar">
-            <img src={logo} alt="logo" className="logo" />
+            <a href='/'>
+                <img src={logo} alt="logo" className="logo" />
+            </a>
             <div className="desktop-menu">
-                <Link activeClass='active' to="hero-section" spy={true} smooth={true} offset={-100} duration={500}className="desktop-menu-list-item">Home</Link>
+                <Link activeClass='active' to="hero-section" spy={true} smooth={true} offset={-100} duration={500} className="desktop-menu-list-item">Home</Link>
                 <Link activeClass='active' to="skills-section" className="desktop-menu-list-item" spy={true} smooth={true} offset={-100} duration={500}>Skills</Link>
                 <Link activeClass='active' to="portfolio-section" className="desktop-menu-list-item" spy={true} smooth={true} offset={-100} duration={500}>Portfolio</Link>
             </div>

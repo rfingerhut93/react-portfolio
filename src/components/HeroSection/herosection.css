@@ -8,11 +8,11 @@
 
 .bg{
     position: absolute;
-    top: 12rem;
+    top: 17rem;
     right: 0;
     z-index: -1;
     object-fit: cover;
-    height: 50vh;
+    height: 60vh;
 }
 
 .hero-section-content{
@@ -58,59 +58,110 @@
 
 .btn {
     background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
+    margin: 2rem 0;
     border: none;
-    border-radius: 2rem;
-    font-size: 1.2rem;
-    height: 4rem;
-    width: 10rem;
-    transition: background-color 0.3s, transform 0.2s;
+    border-radius: 3rem;
+    width: 25%;
+    height:auto;
+    font-weight: 600;
+    text-align: center;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: transform 0.2s;
+    color: black;
+    position: relative;
+
+    &:not(:hover) img {
+        visibility: hidden;
+        height: 0; 
+    }
 
     &:hover{
-        background-color: var(--highlight-color);
-        transform: scale(1.05);
+        transform: scale(1.1);
+        border: 1px solid var(--secondary-highlight-color);
+        text-shadow:1px 2px 0px var(--secondary-highlight-color);
+        color: var(--highlight-color);
     }
 }
 
 .btn img{
+    visibility: hidden;
     object-fit: cover;
-    margin: 0 0.25rem;
+    margin: 0 0.75rem;
     margin-left: 0;
     height: 1rem;
     vertical-align: middle;
+    transition: transform 0.2s;
+}
+
+.btn:hover img{
+    visibility: visible;
+    transform: scale(1.5);
+    height: 1rem;
 }
 
 @media screen and (max-width:1325px) {
     #hero-section{
         padding-top: 4vh;
-        margin: 0;
         width: 100%;
     }
     .bg {
-        display: none;
+        top: 12rem;
+        height: 60%;
     }
     .smaller{
         font-size: 4rem;
     }
 
+    .hero-section-content{
+        width: 80%;
+    }
+
+    .btn{
+        width: 50%;
+    }
+
+    .text-gradient{
+        font-size: smaller;
+    }
+
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:1200px){
+    .bg {
+        display: none;
+    }
     #hero-section {
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
+        justify-content: center;
     }
     
     .hero-section-content{
         padding: 2rem 1rem;
+        align-items: center;
+        justify-content: center;
     }
 
+
+
     .btn {
+        width: 100%;
         transition: none;
+        &:not(:hover) img{
+            visibility: visible;
+            height: 1.5rem;
+        }
         &:hover{
             transform: none;
         }
+    }
+
+    .btn:hover img{
+        transform: none;
     }
 }
 
@@ -120,5 +171,25 @@
    .hero-section-content{
     padding-top: 0;
     padding-bottom: 5rem;
+   }
+   .btn{
+    width: 100%;
+    font-size: 1.5rem;
+   }
+   #intro-text{
+    font-size: 5rem;
+    margin-top: 0.5rem;
+   }
+   #intro-name{
+    font-size: 6rem;
+   }
+   .smaller, .text-gradient{
+    font-size: 2rem;
+   }
+   #intro-para{
+    padding: 0.5rem 0;
+   }
+   .smaller{
+    margin-top: 0.5rem;
    }
 }

@@ -1,10 +1,10 @@
 import './portfolio.css';
-import blog from '../../assets/blog.png';
-import foodStuff from '../../assets/foodStuff.png';
-import portfolio from '../../assets/portfolio.png';
-import priceGrid from '../../assets/priceGrid.png';
-import testimonials from '../../assets/testimonials.png';
-import lovins from '../../assets/lovins.png'
+import reactBlog from '../../assets/reactBlog.png';
+import food from '../../assets/food.png';
+import oldWebsite from '../../assets/oldWebsite.png';
+import pricegrid from '../../assets/pricegrid.png';
+import testimonialGrid from '../../assets/testimonialGrid.png';
+import lovinsWeb from '../../assets/lovinsWeb.png'
 
 const Portfolio = () => {
   return (
@@ -16,59 +16,58 @@ const Portfolio = () => {
         <div id="portfolio-imgs">
           <div className="portfolio-item">
             <div className="portfolio-info">
-              <a href="https://github.com/rfingerhut93/recipe-blog-full-stack" target="_blank">Code</a>
+              <a href="https://github.com/rfingerhut93/recipe-blog-full-stack" target="_blank" rel='noreferrer'>Code</a>
             </div>
-            <a href="https://recipe-blog-d1b4f.uw.r.appspot.com/" target="_blank">
-              <img src={foodStuff} alt="Food Stuff Recipe Blog" className="portfolio-img" />
+            <a href="https://recipe-blog-d1b4f.uw.r.appspot.com/" target="_blank" rel='noreferrer'>
+              <img src={food} alt="Food Stuff Recipe Blog" className="portfolio-img" />
             </a>
           </div>
 
           <div className="portfolio-item">
             <div className="portfolio-info">
-                <a href="https://github.com/rfingerhut93/single-price-grid-component" target="_blank">Code</a>
+                <a href="https://github.com/rfingerhut93/single-price-grid-component" target="_blank" rel='noreferrer'>Code</a>
             </div>
-            <a href="https://rfingerhut93.github.io/single-price-grid-component/" target="_blank">
-                <img src={priceGrid} alt="Price Grid component" className="portfolio-img" />
+            <a href="https://rfingerhut93.github.io/single-price-grid-component/" target="_blank" rel='noreferrer'>
+                <img src={pricegrid} alt="Price Grid component" className="portfolio-img" />
             </a>
           </div>
 
           <div className="portfolio-item">
             <div className="portfolio-info">
-                <a href="https://github.com/rfingerhut93/testimonials-grid-section-main" target="_blank">Code</a>
+                <a href="https://github.com/rfingerhut93/testimonials-grid-section-main" target="_blank" rel='noreferrer'>Code</a>
             </div>
-            <a href="https://rfingerhut93.github.io/testimonials-grid-section-main/" target="_blank">
-                <img src={testimonials} alt="Testimonials component" className="portfolio-img" />
+            <a href="https://rfingerhut93.github.io/testimonials-grid-section-main/" target="_blank" rel='noreferrer'>
+                <img src={testimonialGrid} alt="Testimonials component" className="portfolio-img" />
             </a>
           </div>
 
           <div className="portfolio-item">
             <div className="portfolio-info">
-                <a href="https://github.com/rfingerhut93/full-stack-blog" target="_blank">Code</a>
+                <a href="https://github.com/rfingerhut93/full-stack-blog" target="_blank" rel='noreferrer'>Code</a>
             </div>
-            <a href="https://my-react-blog-b79c5.wl.r.appspot.com/" target="_blank">
-                <img src={blog} alt="Blog website" className="portfolio-img" />
+            <a href="https://my-react-blog-b79c5.wl.r.appspot.com/" target="_blank" rel='noreferrer'>
+                <img src={reactBlog} alt="Blog website" className="portfolio-img" />
             </a>
           </div>
 
           <div className="portfolio-item">
             <div className="portfolio-info">
-                <a href="" target="_blank" id="lovins-code">Code</a>
+                <a href="/" id="lovins-code" rel='noreferrer'>Code</a>
             </div>
-            <a href="https://lovinspsychotherapy.com/" target="_blank">
-                <img src={lovins} alt="Lovins Psychotherapy website" className="portfolio-img" />
+            <a href="https://lovinspsychotherapy.com/" target="_blank" rel='noreferrer'>
+                <img src={lovinsWeb} alt="Lovins Psychotherapy website" className="portfolio-img" id="lovins-img" />
             </a>
           </div>
 
           <div className="portfolio-item">
             <div className="portfolio-info">
-                <a href="https://github.com/rfingerhut93/rachelfingerhut.com" target="_blank">Code</a>
+                <a href="https://github.com/rfingerhut93/rachelfingerhut.com" target="_blank" rel='noreferrer'>Code</a>
             </div>
-            <a href="https://rachelfingerhut.com/" target="_blank">
-                <img src={portfolio} alt="Portfolio website" className="portfolio-img" />
+            <a href="https://rfingerhut93.github.io/rachelfingerhut.com/" target="_blank" rel='noreferrer'>
+                <img src={oldWebsite} alt="Portfolio website" className="portfolio-img" />
             </a> 
           </div>
         </div>
-        <button id="portfolio-btn">See More</button>
     </section>
   )
 }

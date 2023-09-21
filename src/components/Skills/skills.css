@@ -1,7 +1,7 @@
 #skills-section{
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 8rem 13rem 8rem;
+    padding: 5rem 8rem 13rem 8rem;
     line-height: 1.4rem;
     display: flex;
     flex-direction: column;
@@ -67,6 +67,20 @@
 }
 
 @media screen and (max-width:1325px) {
+    #section-text-container{
+        width: 80%;
+    }
+
+    .skill-card-container{
+        max-width: 80%;
+    }
+
+    .skill-card{
+        padding: 2rem;
+        margin: 2rem auto;
+    }
+
+
     .skill-card-text h2{
         font-size: 2.1rem;
     }
@@ -116,5 +130,8 @@
     }
     #skills-section{
         padding: 0;
+    }
+    .skill-title{
+        font-size: 4rem;
     }
 }
